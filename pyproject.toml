@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "oddsinfer"
+version = "0.1.0"
+description = "Overround correction and probability inference for betting markets"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "James Restell" }
+]
+dependencies = [
+    "scipy",
+    "numpy",
+    "pandas"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/oddsinfer"]
